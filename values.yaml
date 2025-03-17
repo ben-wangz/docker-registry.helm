@@ -80,6 +80,9 @@ storage: filesystem
 secrets:
   haSharedSecret: ""
   htpasswd: ""
+  # the name of existing secret which contains htpasswd(key: htpasswd)
+  # will replace secrets.htpasswd if set
+  existingHtpasswdSecret: ""
 # Secrets for Azure
 #   azure:
 #     accountName: ""
